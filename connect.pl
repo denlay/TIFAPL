@@ -4,12 +4,11 @@ use warnings;
 
 # CONFIG VARIABLES
 $platform = "Pg";
-$database = "db_smartelco";
+$database = "mydb";
 $host = "localhost";
-$port = "3306";
-$tablename = "inventory";
+$port = "5432";
 $user = "postgres";
-$password = 'admin01';
+$password = 'postgres';
 $dbh	= "dbi:$platform:dbname=$database host=$host port=$port";
 
 

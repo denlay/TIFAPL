@@ -11,14 +11,13 @@ my $dbh = dbi_connect(); # connect doing here
 foreach (@ARGV) { # every argument 
 	
 	my $param = $_;
-	# read file sql
-
+	
 	$/ = undef;
 	
 	print "Open ", $param, "\n";
 	
 	open FILE, $param or die $!;
-	#print SCRIPT;
+	
 	print "Open ", $param, "\n";
 
 	my $query = $dbh->prepare(<FILE>);
